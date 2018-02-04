@@ -96,8 +96,8 @@ def create_csv_ways_tags_table(file):
                         create_row_csv(csv_writer,field_ways_tags)
 
 ```
-
-* **File sizes: *
+#3. Data Overview
+### File sizes:
 
 barueri_e_cidades_vizinhas.osm : 70.259 MB
 nodes_csv: 26.935 KB
