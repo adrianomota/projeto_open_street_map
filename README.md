@@ -47,7 +47,7 @@ Olhando para o arquivo XML, descobri que ele usa diferentes tipos de tags. Entã
 def is_pt(value):
     return value.find("pt:") > -1
 ```
-* ** Foram criadas funções para analisar as tags k e value    
+* ** Foram criadas funções para analisar os valores k e value das tags node e ways *  
    
  ```python
  def audit_node_tags_k(value):
@@ -96,3 +96,13 @@ def create_csv_ways_tags_table(file):
                         create_row_csv(csv_writer,field_ways_tags)
 
 ```
+
+* **File sizes: *
+
+barueri_e_cidades_vizinhas.osm : 70.259 MB
+nodes_csv: 26.935 KB
+nodes_tags.csv: 238 KB
+ways_csv: 2.554 KB
+ways_nodes.csv: 9.138 KB
+ways_tags.csv: 2.8 KB
+openstreet_map.db: 35.840 KB
