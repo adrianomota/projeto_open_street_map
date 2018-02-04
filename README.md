@@ -99,10 +99,10 @@ def create_csv_ways_tags_table(file):
 #3. Data Overview
 ### File sizes:
 
-barueri_e_cidades_vizinhas.osm : 70.259 MB
-nodes_csv: 26.935 KB
-nodes_tags.csv: 238 KB
-ways_csv: 2.554 KB
-ways_nodes.csv: 9.138 KB
-ways_tags.csv: 2.8 KB
-openstreet_map.db: 35.840 KB
+  * `barueri_e_cidades_vizinhas.osm : 70.259 MB`
+  * `nodes_csv: 26.935 KB`
+* `nodes_tags.csv: 238 KB`
+* `ways_csv: 2.554 KB`
+* `ways_nodes.csv: 9.138 KB`
+* `ways_tags.csv: 2.8 KB`
+* `openstreet_map.db: 35.840 KB`
