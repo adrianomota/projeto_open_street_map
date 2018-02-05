@@ -106,3 +106,126 @@ def create_csv_ways_tags_table(file):
 * `ways_nodes.csv: 9.138 KB`
 * `ways_tags.csv: 2.8 KB`
 * `openstreet_map.db: 35.840 KB`
+
+
+###Números de nodes:
+``` python
+sqlite> SELECT COUNT(*) FROM nodes
+```
+**Output:**
+```
+313187
+```
+
+
+
+###Número de usuários Únicos:
+```python
+sqlite> SELECT COUNT(DISTINCT(e.uid))          
+FROM (SELECT uid FROM nodes UNION ALL SELECT uid FROM ways) e;
+```
+**Output:**
+```
+338
+```
+
+###Top usuários contribuintes:
+```python
+sqlite> SELECT e.user, COUNT(*) as num
+FROM (SELECT user FROM nodes UNION ALL SELECT user FROM ways) e
+GROUP BY e.user
+ORDER BY num DESC
+LIMIT 10;
+```
+**Output:**
+
+```
+Bonix-importer		150456
+Bonix-mapper		73726
+Ajbelnuovo		34235
+Ygorre			17160
+Cxs			14636
+O fim			8829
+Elias lopes		5891
+Rub21			5585
+Naoliv			3569
+Marcos daniel		2824
+```
+
+###Número de usuários que contribuiram apenas uma vez:
+```python
+sqlite> SELECT COUNT(*) 
+FROM
+    (SELECT e.user, COUNT(*) as num
+     FROM (SELECT user FROM nodes UNION ALL SELECT user FROM ways) e
+     GROUP BY e.user
+     HAVING num=1) u;
+```
+**Output:**
+```
+77
+```
+
+# 4. Additional Data Exploration
+
+### Ammenities Comuns:
+```python
+sqlite> SELECT value, COUNT(*) as num
+FROM nodes_tags
+WHERE key='amenity'
+GROUP BY value
+ORDER BY num DESC
+LIMIT 10;
+
+```
+**Output:**
+```
+Pizza Italiana tradicional	73
+Restaurante			41
+Religião			33
+Banco				25
+Farmácia			22
+Posto de gasolina		21
+Escola				18
+Restaurante de Fast Food	9
+Caixa eletrônico		8
+Estacionamento			8
+```
+
+
+###Religião com mais adeptos:
+```python
+sqlite> SELECT nodes_tags.value, COUNT(*) as num
+FROM nodes_tags 
+    JOIN (SELECT DISTINCT(id) FROM nodes_tags WHERE value='Religião') i
+    ON nodes_tags.id=i.id
+WHERE nodes_tags.key='religion'
+GROUP BY nodes_tags.value
+ORDER BY num DESC
+LIMIT 1;
+```
+**Output:**
+```
+Cristianismo	28
+
+
+###Cozinhas populares
+```python
+sqlite> SELECT nodes_tags.value, COUNT(*) as num
+FROM nodes_tags 
+    JOIN (SELECT DISTINCT(id) FROM nodes_tags WHERE value='restaurant') i
+    ON nodes_tags.id=i.id
+WHERE nodes_tags.key='cuisine'
+GROUP BY nodes_tags.value
+ORDER BY num DESC;
+```
+**Output:**
+```
+Pizza			7
+Comidas regionais	3
+Rede de grelhados	3
+Amburgueria		1
+```
+
+# 5. Conclusion
+
