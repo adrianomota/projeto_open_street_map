@@ -31,7 +31,7 @@ Olhando para o arquivo XML, descobri que ele usa diferentes tipos de tags. Entã
     * `public_transport -> Transporte público`
     * `toll_booth -> Pedágio`
 
-* **Abreviações **
+* **Abreviações**
     * `pt: -> Ponte`
     * `addr:city -> Cidade`
     * `addr:country -> Country`
@@ -39,13 +39,13 @@ Olhando para o arquivo XML, descobri que ele usa diferentes tipos de tags. Entã
     * `addr:state -> Estado`
     * `addr:street -> Bairro`
 
-* ** Foram criadas funções para tratar essas traduções e entender melhor as informações no dataset, por exemplo:
+* **Foram criadas funções para tratar essas traduções e entender melhor as informações no dataset, por exemplo:**
 
 ```python 
 def is_pt(value):
     return value.find("pt:") > -1
 ```
-* ** Foram criadas funções para analisar os valores k e value das tags node e ways *  
+* **Foram criadas funções para analisar os valores k e value das tags node e ways **  
    
  ```python
  def audit_node_tags_k(value):
@@ -107,10 +107,10 @@ def create_csv_ways_tags_table(file):
 
 ```
 #3. Data Overview
-### File sizes:
+### Tamanho dos arquivos:
 
-  * `barueri_e_cidades_vizinhas.osm : 70.259 MB`
-  * `nodes_csv: 26.935 KB`
+* `barueri_e_cidades_vizinhas.osm : 70.259 MB`
+* `nodes_csv: 26.935 KB`
 * `nodes_tags.csv: 238 KB`
 * `ways_csv: 2.554 KB`
 * `ways_nodes.csv: 9.138 KB`
