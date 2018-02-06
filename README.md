@@ -106,7 +106,7 @@ def create_csv_ways_tags_table(file):
                         create_row_csv(csv_writer,field_ways_tags)
 
 ```
-#3. Data Overview
+# 3. Visão geral dos dados
 ### Tamanho dos arquivos:
 
 * `barueri_e_cidades_vizinhas.osm : 70.259 MB`
@@ -176,7 +176,7 @@ FROM
 77
 ```
 
-# 4. Additional Data Exploration
+# 4. Exploração de dados adicionais
 
 ### Ammenities Comuns:
 ```python
