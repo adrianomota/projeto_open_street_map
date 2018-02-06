@@ -26,7 +26,6 @@ Olhando para o arquivo XML, descobri que ele usa diferentes tipos de tags. Entã
  Algumas informações foram traduzidas para algo que faz mais sentido e de acordo com a minha região, já que temos variação dependendo da  região.
  
  * **Traduções para o português** 
-    * `pt -> Ponte`	
     * `operator -> Concessionária`
     * `crossing_bell -> Cruzamento com sinal sonoro`
     * `public_transport -> Transporte público`
