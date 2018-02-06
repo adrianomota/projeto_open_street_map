@@ -8,18 +8,18 @@ Este mapa é da minha cidade, espero descobrir neste dataset informaçôes relev
 # 1. Dados auditados
 Olhando para o arquivo XML, descobri que ele usa diferentes tipos de tags. Então, analisei o conjunto de dados da cidade de Barueri, São Paulo usando ElementTree e número de contagem das tags exclusivas.
 
- *{
- 'bounds': 1,
- 'member': 9899,
- 'meta': 1,
- 'nd': 408815,
- 'node': 313187,
- 'note': 1,
- 'osm': 1,
- 'relation': 710,
- 'tag': 127641,
- 'way': 41134 
- }
+ 
+ * `'bounds': 1,`
+ * `'member': 9899,`
+ * `'meta': 1,`
+ * `'nd': 408815,`
+ * `'node': 313187,`
+ * `'note': 1,`
+ * `'osm': 1,`
+ * `'relation': 710,`
+ * `'tag': 127641,`
+ * `'way': 41134 `
+ 
  
  # 2. Problemas encontrados
  O principal problema que encontramos no conjunto de dados é a inconsistência nas informações e o nomes em inglês.
