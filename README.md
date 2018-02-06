@@ -45,7 +45,7 @@ Olhando para o arquivo XML, descobri que ele usa diferentes tipos de tags. Entã
 def is_pt(value):
     return value.find("pt:") > -1
 ```
-* **Foram criadas funções para analisar os valores k e value das tags node e ways **  
+* **Foram criadas funções para analisar os valores k e value das tags node e ways
    
  ```python
  def audit_node_tags_k(value):
