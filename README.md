@@ -3,7 +3,7 @@
 **Name:** Adriano Mota
 
 * Local: ,Barueri, São Paulo
- [OpenStreetMap URL] https://www.openstreetmap.org/export#map=13/-23.5121/-46.8357
+* [OpenStreetMap URL] https://www.openstreetmap.org/export#map=13/-23.5121/-46.8357
  
 Este mapa é da minha cidade, espero descobrir neste dataset informaçôes relevantes da minha cidade.
 
