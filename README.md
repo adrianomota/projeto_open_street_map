@@ -51,15 +51,27 @@ def is_pt(value):
  def audit_node_tags_k(value):
     if is_residential(value):
         return "Residencial"
-	.
+    if is_highway(value):
+        return "Auto estrada"
+    if is_stop(value):
+        return "Parada"
+    if is_train(value):
+        return "Trem"
+ 	.
 	.
 	# outras funções
-  return
+  return value
   
  def audit_node_tags_value(value):
      if is_pt(value):
         return "Ponte em "
-	.
+     if is_motorway_junction(value):
+        return "Junção de auto-estrada"
+     if is_milestone(value):
+        return "Marco Histórico"
+     if is_traffic_signals(value):
+        return "Sinal de Trânsito"
+   	.
 	.
 	# outras funções
  return value
