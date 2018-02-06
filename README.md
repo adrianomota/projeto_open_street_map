@@ -129,7 +129,7 @@ sqlite> SELECT COUNT(*) FROM nodes
 
 
 
-###Número de usuários Únicos:
+### Número de usuários Únicos:
 ```python
 sqlite> SELECT COUNT(DISTINCT(e.uid))          
 FROM (SELECT uid FROM nodes UNION ALL SELECT uid FROM ways) e;
@@ -139,7 +139,7 @@ FROM (SELECT uid FROM nodes UNION ALL SELECT uid FROM ways) e;
 338
 ```
 
-###Top usuários contribuintes:
+### Top usuários contribuintes:
 ```python
 sqlite> SELECT e.user, COUNT(*) as num
 FROM (SELECT user FROM nodes UNION ALL SELECT user FROM ways) e
@@ -162,7 +162,7 @@ Naoliv			3569
 Marcos daniel		2824
 ```
 
-###Número de usuários que contribuiram apenas uma vez:
+### Número de usuários que contribuiram apenas uma vez:
 ```python
 sqlite> SELECT COUNT(*) 
 FROM
@@ -203,7 +203,7 @@ Estacionamento			8
 ```
 
 
-###Religião com mais adeptos:
+### Religião com mais adeptos:
 ```python
 sqlite> SELECT nodes_tags.value, COUNT(*) as num
 FROM nodes_tags 
@@ -219,7 +219,7 @@ LIMIT 1;
 Cristianismo	28
 
 
-###Cozinhas populares
+### Cozinhas populares
 ```python
 sqlite> SELECT nodes_tags.value, COUNT(*) as num
 FROM nodes_tags 
