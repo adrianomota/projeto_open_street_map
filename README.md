@@ -1,7 +1,5 @@
 # Estudo de Caso de Dados OpenStreetMap
 
-**Name:** Adriano Mota
-
 * Local: ,Barueri, São Paulo
 * [OpenStreetMap URL] https://www.openstreetmap.org/export#map=13/-23.5121/-46.8357
  
