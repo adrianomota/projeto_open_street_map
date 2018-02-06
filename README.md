@@ -217,7 +217,7 @@ LIMIT 1;
 **Output:**
 ```
 Cristianismo	28
-
+```
 
 ### Cozinhas populares
 ```python
