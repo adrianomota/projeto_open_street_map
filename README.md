@@ -238,5 +238,5 @@ Amburgueria		1
 ```
 
 # 5. Conclusion
-Os dados do openstreetmap são interessanets e de qualidade, mas os erros causados por entradas inválidas dos usuários são significativos. Nós limpamos e traduzimos uma quantidade significativa de dados necessários para este projeto, mas há muita melhoria necessária no conjunto de dados. O conjunto de dados contém muito menos informações adicionais, como amenidades, atrações turísticas, lugares populares e outros interesses úteis.O conjunto de dados contém informações muito antigas tornando difícil a comparação com o Google Maps ou o Bing Maps, porém acho que há várias oportunidades para a limpeza e validação dos dados no futuro.
+Os dados do openstreetmap são interessanets e de qualidade, mas os erros causados por entradas inválidas dos usuários são significativos. Nós limpamos e traduzimos uma quantidade significativa de dados necessários para este projeto, mas há muita melhoria necessária. O conjunto de dados contém muito menos informações adicionais, como amenidades, atrações turísticas, lugares populares e outros interesses úteis.O conjunto de dados contém informações muito antigas tornando difícil a comparação com o Google Maps ou o Bing Maps, porém acho que há várias oportunidades para a limpeza e validação dos dados no futuro.
  
