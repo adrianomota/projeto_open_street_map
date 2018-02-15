@@ -31,13 +31,14 @@ Olhando para o arquivo XML, descobri que ele usa diferentes tipos de tags. Entã
     * `public_transport -> Transporte público`
     * `toll_booth -> Pedágio`
 
-* **Abreviações**
-    * `pt: -> Ponte`
-    * `addr:city -> Cidade`
-    * `addr:country -> Country`
-    * `addr:housenumber -> NUmero da casa`
-    * `addr:state -> Estado`
-    * `addr:street -> Bairro`
+* **Formatações inconsistentes e Abreviações**
+    * `CEP: 05060060 -> 05060-060`
+    * `Telefone +55 11 4201 2557 -> (011)4201-2557`
+    * `Av. -> Avenida`
+    * `Jd. -> Jardim`
+    * `Pq. -> Parque`
+    * `R. -> Rua`
+    * `Dr. -> Doutor`
 
 * **Foram criadas funções para tratar essas traduções e entender melhor as informações no dataset, por exemplo:**
 
