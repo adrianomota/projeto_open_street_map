@@ -31,9 +31,9 @@ Olhando para o arquivo XML, descobri que ele usa diferentes tipos de tags. Entã
     * `public_transport -> Transporte público`
     * `toll_booth -> Pedágio`
 
-* **Formatações inconsistentes e Abreviações**
+* **Formatações inconsistentes e abreviações**
     * `CEP: 05060060 -> 05060-060`
-    * `Telefone +55 11 4201 2557 -> (011)4201-2557`
+    * `Telefone +55 11 4201 2557 -> 01142012557`
     * `Av. -> Avenida`
     * `Jd. -> Jardim`
     * `Pq. -> Parque`
@@ -239,5 +239,5 @@ Amburgueria		1
 ```
 
 # 5. Conclusion
-Os dados do openstreetmap são interessanets e de qualidade, mas os erros causados por entradas inválidas dos usuários são significativos. Nós limpamos e traduzimos uma quantidade significativa de dados necessários para este projeto, mas há muita melhoria necessária. O conjunto de dados contém muito menos informações adicionais, como amenidades, atrações turísticas, lugares populares e outros interesses úteis.O conjunto de dados contém informações muito antigas tornando difícil a comparação com o Google Maps ou o Bing Maps, porém acho que há várias oportunidades para a limpeza e validação dos dados no futuro.
+Os dados do openstreetmap são interessanets e de qualidade, mas os erros causados por entradas inválidas dos usuários são significativos. Nós limpamos e traduzimos uma quantidade significativa de dados necessários para este projeto, mas há muita melhoria necessária como ,por exemplo, na questão da tradução poderiamos utilizar alguma API de tradução, por exemplo, a Google Cloud Translation API e traduzir alguns dados para um determinado idioma, no meu caso seria para o português Brasil pt-br.
  
