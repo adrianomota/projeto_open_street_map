@@ -119,7 +119,7 @@ def create_csv_ways_tags_table(file):
 * `openstreet_map.db: 35.840 KB`
 
 
-###Números de nodes:
+### Números de nodes:
 ``` python
 sqlite> SELECT COUNT(*) FROM nodes
 ```
