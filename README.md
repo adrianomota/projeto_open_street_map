@@ -237,7 +237,12 @@ Comidas regionais	3
 Rede de grelhados	3
 Amburgueria		1
 ```
+# 5. Outras Ideias sobre os Dados
+Durante o tratamento dos dados notei que grande parte das palavras estão em inglês e vi a necessidade de traduzi-las. Após pesquisar
+vi que a Google possui uma api de tradução porém é paga, mas há uma quota de uso livre para testes Google Translate https://cloud.google.com/translate/docs/translating-text.
+Como alternativa existe uma biblioteca python Gogletrans http://py-googletrans.readthedocs.io/en/latest/ que pode ser implementada para resolver essa questão da tradução de palavras em inglês de forma automática e sem custos monetátios de uso.
 
-# 5. Conclusion
-Os dados do openstreetmap são interessanets e de qualidade, mas os erros causados por entradas inválidas dos usuários são significativos. Nós limpamos e traduzimos uma quantidade significativa de dados necessários para este projeto, mas há muita melhoria necessária como ,por exemplo, na questão da tradução poderiamos utilizar alguma API de tradução, por exemplo, a Google Cloud Translation API e traduzir alguns dados para um determinado idioma, no meu caso seria para o português Brasil pt-br.
+
+# 6. Conclusion
+Os dados do openstreetmap são interessanets e de qualidade, mas os erros causados por entradas inválidas dos usuários, informações em branco e falta de padronização de algumas são significativos. Nós limpamos e traduzimos uma quantidade significativa de dados necessários para este projeto, mas há muita melhoria necessária como ,por exemplo, na questão da tradução poderiamos utilizar alguma API de tradução, por exemplo, a Google Cloud Translation API e traduzir boa parte das palavras para o português Brasil, e também utilizarmos algum web service do correio para completar nomes de logradouros faltantes ou incorretos e o google maps para buscarmos informações adicionais como telefones, horários de funcionamento, endereções de websites, ou seja, seria possível consultar um grande número de informações disponìveis.
  
