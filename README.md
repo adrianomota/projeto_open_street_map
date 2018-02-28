@@ -240,9 +240,13 @@ Amburgueria		1
 # 5. Outras Ideias sobre os Dados
 Durante o tratamento dos dados notei que grande parte das palavras estão em inglês e vi a necessidade de traduzi-las. Após pesquisar
 vi que a Google possui uma api de tradução porém é paga, mas há uma quota de uso livre para testes Google Translate https://cloud.google.com/translate/docs/translating-text.
-Como alternativa existe uma biblioteca python Gogletrans http://py-googletrans.readthedocs.io/en/latest/ que pode ser implementada para resolver essa questão da tradução de palavras em inglês de forma automática e sem custos monetátios de uso.
-
+Um outro desafio é a criação de aplicações geocoders para a inclusão de informações precisas no dataset do openstreetmap e com isso analisar essas informações e publicar no openstreetmap.Um exemplo seria eu ir aos quatro supermercados da minha região analisar os preços das cestas básicas tirar uma média e publicar essa informação e fomentaria uma guerra comrcial entre os estabelecimentos e estimularia a competitividade entre eles e o consumidor sairia ganhando. Isso geraria um outro desafio que seria a criação de uma camada de API para tal fim.
+A criação de QRCodes especificos também seria interessante para inclusão de informações no openstreetmap, no brasil isso poderia ser feito para o senso do IBGE.
 
 # 6. Conclusion
-Os dados do openstreetmap são interessantes e de qualidade, mas os erros causados por entradas inválidas dos usuários, informações em branco e falta de padronização de algumas são significativos. Nós limpamos e traduzimos uma quantidade significativa de dados necessários para este projeto, mas há muita melhoria necessária como , por exemplo , na questão da tradução, poderiamos utilizar alguma API de tradução e traduzir boa parte das palavras para o português Brasil.Poderíamos também utilizarmos algum web service, o do Correio por exemplo, para completar nomes de logradouros faltantes ou incorretos e o google maps para buscarmos informações adicionais como telefones, horários disponíveis, endereços de websites, ou qualquer informações adicional disponível, enfim, seria possível consultar um grande número de informações adicionais e detalhar com mais riqueza as informações dos locais.
- 
+Os dados do openstreetmap são interessantes e de qualidade, mas os erros causados por entradas inválidas dos usuários, informações em branco e falta de padronização de algumas são significativos. Nós limpamos e traduzimos uma quantidade significativa de dados necessários para este projeto, mas há muita melhoria necessária. Como melhoria par o uso da ferramenta vejo que existe a necessidade da criação de muitas aplicações que ajudariam a fomentar o uso do openstreetmap, por exemplo o mapeamento dos preços dos produtos dos produtos dos supermercados da sua região, o valor dos imóveis de determinada região, todas essas seriam informações que gerariam competitividade e daria melhor visibilidade ao openstreetmap.
+Para melhorar a confiabilidade das informações seria possivel criar uma assinatura digital para as tags para possiveis validações entre os consumidores através de chaves públicas disponibilizadas.
+Enfim, essas são só algumas idéias onde o openstreetmap seria muito útil e creio que quanto mais aplicações inserirem informações maior será o valor da ferramenta.
+
+
+
